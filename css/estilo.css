@@ -1,0 +1,133 @@
+*{
+ padding: 0%;
+ margin: 0%;   
+
+}
+body {
+    display: grid;
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px,auto,auto,1fr;
+    grid-gap: 5px;
+}
+h1 {
+    display:none;
+}
+.header {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    grid-column: 1/-1;
+    border: 3px black solid;
+    background-color: black;
+    grid-row: 1/2;
+    padding-left: 1em;
+}
+.header p{
+    color: white;
+    align-self: center;
+}
+.blank {
+    display: inline-flex;
+    width:10em;
+}
+.nav {
+    width: 100%;
+    justify-self: right;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    align-items: center;
+}
+.nav div {
+    display: none;
+    padding: 0.5 em;
+    margin: 0.5em;
+
+}
+.nav div a {
+    text-decoration: none;
+}
+
+.dropdown1 {
+    justify-self: flex-start;
+    margin: 0.5;
+    padding: 0;
+    font-size: 2em;
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+  }
+  
+  
+  #boton1 {
+    margin-top: 0;
+    padding: 0.5em;
+    font-size: 0.5em;
+    background-color: rgb(214, 182, 245);
+    border-radius: 5px;
+  }
+  #boton1 img {
+    width: 1em;
+  }
+.dropdown-content1 {
+    
+    display: none;
+    position: absolute;
+    width: 600%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba( 0,0,0,1);
+  }
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+  
+.dropdown-content1 a {
+    display: block;
+    background-color: white;
+    color: #000000;
+    padding: 5px;   
+    text-decoration: none;
+}
+  
+.dropdown-content1 a:hover {
+    color: rgb(95, 6, 184);
+    
+}
+
+.aside {
+    border: 3px red solid;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+.main {
+    grid-column: 1/-1;
+    border: 3px blue solid;
+    grid-row: 3/4;
+}
+.footer{
+    display: flex;
+    grid-column: 1/-1;
+    border: 3px green solid;
+    grid-row: 4/5;
+}
+footer div ul li {
+    text-decoration: none;
+}
+.footer .ico {
+    align-self: center;
+    text-align: center;
+    width: 100%;
+    
+}
+.footernav div {
+    margin: 0.5px;
+    padding: 0.5px;
+}
+.footernav div a {
+    text-decoration: none;
+}
