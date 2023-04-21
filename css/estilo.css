@@ -35,6 +35,9 @@ h1 {
     display: inline-flex;
     width:10em;
 }
+.blank p {
+    font-size: 1.5em;
+}
 .nav {
     width: 100%;
     justify-self: right;
@@ -50,6 +53,7 @@ h1 {
 
 }
 .nav div a {
+    color: white;
     text-decoration: none;
 }
 
@@ -68,12 +72,11 @@ h1 {
     margin-top: 0;
     padding: 0.5em;
     font-size: 0.5em;
-    background-color: rgb(214, 182, 245);
+    background-color:gray;
     border-radius: 5px;
-  }
-  #boton1 img {
     width: 1em;
   }
+
 .dropdown-content1 {
     
     display: none;
@@ -130,4 +133,10 @@ footer div ul li {
 }
 .footernav div a {
     text-decoration: none;
+}
+
+@media screen and (min-width:401px){
+
+    .nav div{ display: inline;}
+    .dropdown1 {display:none;}
 }
