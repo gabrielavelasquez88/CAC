@@ -5,12 +5,12 @@
 }
 body {
     display: grid;
-    background-color: aqua;
+    
     width: 100%;
     height: 100%;
     min-height: 100%;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px,auto,auto,1fr;
+    grid-template-rows: 150px,auto,auto,1fr;
     grid-gap: 5px;
 }
 h1 {
@@ -27,13 +27,14 @@ h1 {
     grid-row: 1/2;
     padding-left: 1em;
 }
-.header p{
+ .header p{
     color: white;
     align-self: center;
 }
 .blank {
+    justify-content: flex-end;
     display: inline-flex;
-    width:10em;
+    width:20em;
 }
 .blank p {
     font-size: 1.5em;
@@ -91,7 +92,7 @@ h1 {
   
 .dropdown-content1 a {
     display: block;
-    background-color: white;
+    background-color: grey;
     color: #000000;
     padding: 5px;   
     text-decoration: none;
@@ -111,7 +112,50 @@ h1 {
     grid-column: 1/-1;
     border: 3px blue solid;
     grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+
 }
+
+.section {
+    margin-top: 1em;
+    max-width: 100%;
+}
+.section img {
+    width: 100%;
+}
+.section p{ 
+    color: black;
+    text-align: center;
+}
+.section ul  {
+    margin-top: 0.5em;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+}
+.section ul li {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+.article { 
+    width:100%;
+}
+.article p {
+    font-size: 1em;
+    text-align: left;
+}
+
+.article .literal {
+     
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-size: 0.8em;
+    font-style: italic;
+    background-color: rgb(172, 169, 169);
+}
+
 .footer{
     display: flex;
     grid-column: 1/-1;
@@ -135,8 +179,29 @@ footer div ul li {
     text-decoration: none;
 }
 
-@media screen and (min-width:401px){
+@media screen and (min-width:415px){
 
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
+    .aside {
+        grid-column: 1/4;
+        grid-row: 2/4;
+    }
+    .main {
+        grid-column: 4/-1;
+        grid-row: 2/4;    
+        display:flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat (2, auto);
+    }
+    .section{
+        margin: 1em;
+       
+    }
+    .section img {
+        border-radius: 5px;
+        width: 100%;
+    }
+    
 }
