@@ -236,6 +236,7 @@ form{
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    
 }
     .mainsuscripcion {
         grid-column: 4/-1;
@@ -256,12 +257,20 @@ form{
       input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
         width: 80%;
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         border-radius: 5px;
         border: 1px solid #cccccc9e;
         background-color: #efebeb;
       }
-            
+      input[type="submit"], button[type="reset"] {
+        
+        background-color: #122e27;
+        color: #fff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 10px 10px;
+      }
+              
 /* Formulario: end */     
     .section{
         margin: 1em;
