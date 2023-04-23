@@ -68,7 +68,24 @@ h1 {
     z-index: 3;
   }
   
-  
+ #animada{
+    position: relative;
+        animation-name: mover-imagen;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes mover-imagen {
+        0% {
+            left: 0;
+        }
+    
+        100% {
+            left: calc(100% - 200px);
+        }
+      
+  }
   #boton1 {
     margin-top: 0;
     padding: 0.5em;
@@ -120,10 +137,17 @@ h1 {
 .section {
     margin-top: 1em;
     max-width: 100%;
+   
 }
 .section img {
     width: 100%;
+    position: relative;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
 }
+.section img:hover {
+    transform: scale(1.1);
+  }
 .section p{ 
     color: black;
     text-align: center;
