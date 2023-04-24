@@ -35,7 +35,7 @@ h1 {
 .blank {
     justify-content: flex-end;
     display: inline-flex;
-    width:20em;
+    width:40em;
 }
 .blank p {
     font-size: 1.5em;
@@ -105,10 +105,17 @@ h1 {
 }
 
 .aside {
-    border: 3px red solid;
     grid-column: 1/-1;
     grid-row: 2/3;
+    display: flex;
+    border-right: black solid 1px;
+    flex-direction: row;
+    justify-content: center ;
 }
+.aside img {
+    width:100%;
+}
+
 .main {
     grid-column: 1/-1;
     border: 3px blue solid;
@@ -231,6 +238,15 @@ footer div ul li {
 }
 
 /* Formulario: start */
+.mainsuscripcion {
+    grid-column: 1/-1;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+
+}
 form{
 
     font-family: 'Ysabeau', sans-serif;
@@ -242,15 +258,7 @@ form{
     color: white;
     
 }
-    .mainsuscripcion {
-        grid-column: 4/-1;
-        grid-row: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-
-
-    }
+    
      
       label {
         display: block;
@@ -294,88 +302,19 @@ form{
    
 
 
-@media screen and (min-width:615px){
-
-    .nav div{ display: inline;}
-    .dropdown1 {display:none;}
-    .aside {
-        grid-column: 1/4;
-        grid-row: 2/4;
-    }
-    .main {
-        grid-column: 4/-1;
-        grid-row: 2/4;    
-        display:flex;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat (2, auto);
-    }
-
-/* Formulario: start */
-form{
-
-    font-family: 'Ysabeau', sans-serif;
-
-    background-image:url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    
-}
-    .mainsuscripcion {
-        grid-column: 4/-1;
-        grid-row: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-
-
-    }
-     
-      label {
-        display: block;
-        margin-bottom: 5px;
-        
-      }
-      
-      input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
-        width: 80%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #cccccc9e;
-        background-color: #efebeb;
-      }
-      input[type="submit"], button[type="reset"] {
-        
-        background-color: #122e27;
-        color: #fff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-        padding: 10px 10px;
-      }
-              
-/* Formulario: end */     
-    .section{
-        margin: 1em;
-       
-    }
-    .section img {
-        margin-bottom: 0.5em;
-        border-radius: 5px;
-        width: 100%;
-    }
-
-
 @media screen and (min-width:415px){
 
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
+    .blank { width:10em}
     .aside {
         grid-column: 1/4;
         grid-row: 2/4;
+        display: flex;
+        flex-direction: column;
+    
     }
+    
     .main {
         grid-column: 4/-1;
         grid-row: 2/4;    
@@ -384,67 +323,7 @@ form{
         grid-template-rows: repeat (2, auto);
     }
     .section1 { width:100%;}
-/* Formulario: start */
-form{
 
-    font-family: 'Ysabeau', sans-serif;
-
-    background-image:url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    
-}
-    .mainsuscripcion {
-        grid-column: 4/-1;
-        grid-row: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-
-
-    }
-     
-      label {
-        display: block;
-        margin-bottom: 5px;
-        
-      }
-      
-      input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
-        width: 80%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #cccccc9e;
-        background-color: #efebeb;
-      }
-      input[type="submit"], button[type="reset"] {
-        
-        background-color: #122e27;
-        color: #fff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-        padding: 10px 10px;
-      }
-              
-/* Formulario: end */     
-    .section{
-        margin: 1em;
-       
-    }
-    .section img {
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    .main1 {
-        grid-column: 4/-1;
-        grid-row: 2/4;    
-        display:flex;
-       
-    }    
    
 }
 
@@ -452,6 +331,7 @@ form{
 
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
+    .blank { width:10em}
     .aside {
         grid-column: 1/4;
         grid-row: 2/4;
@@ -465,52 +345,6 @@ form{
         grid-template-rows: repeat (2, auto);
     }
 
-/* Formulario: start */
-form{
-
-    font-family: 'Ysabeau', sans-serif;
-
-    background-image:url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    
-}
-    .mainsuscripcion {
-        grid-column: 4/-1;
-        grid-row: 2/4;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-
-
-    }
-     
-      label {
-        display: block;
-        margin-bottom: 5px;
-        
-      }
-      
-      input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
-        width: 80%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #cccccc9e;
-        background-color: #efebeb;
-      }
-      input[type="submit"], button[type="reset"] {
-        
-        background-color: #122e27;
-        color: #fff;
-        border-radius: 5px;
-        margin-bottom: 15px;
-        padding: 10px 10px;
-      }
-              
-/* Formulario: end */     
     .section{
         margin: 1em;
        
@@ -519,7 +353,7 @@ form{
         margin-bottom: 0.5em;
         border-radius: 5px;
         width: 100%;
-    }
+    } */
 
     .main1 {
         grid-column: 4/-1;
@@ -556,5 +390,4 @@ form{
       .section img:hover {
         transform: scale(1.1);}
    
-}
 }
