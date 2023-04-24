@@ -23,7 +23,6 @@ h1 {
     flex-direction: row;
     align-items: center;
     grid-column: 1/-1;
-    border: 3px black solid;
     background-color: black;
     grid-row: 1/2;
     padding-left: 1em;
@@ -108,7 +107,7 @@ h1 {
     grid-column: 1/-1;
     grid-row: 2/3;
     display: flex;
-    border-right: black solid 1px;
+    border-bottom: black solid 1px;
     flex-direction: row;
     justify-content: center ;
 }
@@ -118,7 +117,6 @@ h1 {
 
 .main {
     grid-column: 1/-1;
-    border: 3px blue solid;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
@@ -172,7 +170,6 @@ h1 {
 
 .main1 {
     grid-column: 1/-1;
-    border: 3px blue solid;
     grid-row: 3/4;
     display: flex;
     flex-direction: column;
@@ -215,7 +212,6 @@ h1 {
 .footer{
     display: flex;
     grid-column: 1/-1;
-    border: 3px green solid;
     grid-row: 4/5;
     background-color: #000000;
     color: white;
@@ -312,6 +308,8 @@ form{
         grid-row: 2/4;
         display: flex;
         flex-direction: column;
+        border-bottom: none;
+        border-right: black solid 1px;
     
     }
     
