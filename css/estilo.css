@@ -326,10 +326,10 @@ form{
 }
 
 @media screen and (min-width:615px){
-
+    .header {height: 70px;}
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
-    .blank { width:10em}
+    .blank { width:20em}
     .aside {
         grid-column: 1/4;
         grid-row: 2/4;
@@ -337,7 +337,6 @@ form{
     .main {
         grid-column: 4/-1;
         grid-row: 2/4;    
-        display:flex;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
