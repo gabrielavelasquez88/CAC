@@ -205,8 +205,13 @@ h1 {
     font-weight: bold;
 }
 .section1 ul li {
+    margin-top: 0.5em;
     font-size: 0.9em;
     font-weight: normal;
+}
+.section1 ul li a{
+    text-decoration: none;
+    color:blue;
 }
 
 .footer{
@@ -361,7 +366,10 @@ form{
     .section1 { 
         width:90%;
         margin: 0 auto}
-    .section1 div {margin-bottom: 10px;}
+    .section1 div {
+        width:70%;
+        margin: 0 auto;
+        margin-bottom: 10px;}
     .article p {
         margin: 0.5em;
         text-align: left;}
