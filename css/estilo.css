@@ -1,12 +1,12 @@
 *{
  padding: 0%;
- margin: 0%;   
+ margin: 0%;
 
 }
 
 body {
     display: grid;
-    
+
     width: 100%;
     height: 100%;
     min-height: 100%;
@@ -67,8 +67,8 @@ h1 {
     position: relative;
     z-index: 3;
   }
-  
- 
+
+
   #boton1 {
     margin-top: 0;
     padding: 0.5em;
@@ -79,7 +79,7 @@ h1 {
   }
 
 .dropdown-content1 {
-    
+
     display: none;
     position: absolute;
     width: 600%;
@@ -89,18 +89,18 @@ h1 {
 .dropdown1:hover .dropdown-content1 {
     display: block;
 }
-  
+
 .dropdown-content1 a {
     display: block;
     background-color: grey;
     color: #000000;
-    padding: 5px;   
+    padding: 5px;
     text-decoration: none;
 }
-  
+
 .dropdown-content1 a:hover {
     color: rgb(95, 6, 184);
-    
+
 }
 
 .aside {
@@ -126,7 +126,7 @@ h1 {
 .section {
     margin-top: 1em;
     max-width: 100%;
-   
+
 }
 .section img {
     width: 100%;
@@ -135,7 +135,7 @@ h1 {
     transition: transform 0.5s ease-in-out;
 }
 
-.section p{ 
+.section p{
     color: black;
     text-align: center;
 }
@@ -149,7 +149,7 @@ h1 {
     font-size: 0.9em;
     font-weight: normal;
 }
-.article { 
+.article {
     width:100%;
 }
 .article p {
@@ -159,7 +159,7 @@ h1 {
 }
 
 .article .literal {
-     
+
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     text-align: center;
@@ -179,7 +179,7 @@ h1 {
 .section1 {
     margin-top: 1em;
     max-width: 100%;
-   
+
 }
 .section1 img {
     width: 100%;
@@ -187,14 +187,14 @@ h1 {
     left: 0;
     transition: transform 0.5s ease-in-out;
 }
-.article1 { 
+.article1 {
     width:100%;
 }
 .article1 p {
     font-size: 1em;
     text-align: left;
 }
-.section1 p{ 
+.section1 p{
     color: black;
     text-align: center;
 }
@@ -228,7 +228,7 @@ footer div ul li {
     align-self: center;
     text-align: center;
     width: 100%;
-    
+
 }
 .footernav div {
     margin: 0.5px;
@@ -257,16 +257,16 @@ form{
     background-position: center;
     background-repeat: no-repeat;
     color: white;
-    
+
 }
-    
-     
+
+
       label {
         display: block;
         margin-bottom: 5px;
-        
+
       }
-      
+
       input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
         width: 80%;
         padding: 10px;
@@ -276,18 +276,18 @@ form{
         background-color: #efebeb;
       }
       input[type="submit"], button[type="reset"] {
-        
+
         background-color: #122e27;
         color: #fff;
         border-radius: 5px;
         margin-bottom: 15px;
         padding: 10px 10px;
       }
-              
-/* Formulario: end */     
+
+/* Formulario: end */
     .section{
         margin: 1em;
-       
+
     }
     .section img {
         border-radius: 5px;
@@ -296,11 +296,11 @@ form{
 
     .main1 {
         grid-column: 4/-1;
-        grid-row: 2/4;    
+        grid-row: 2/4;
         display:flex;
-       
-    }    
-   
+
+    }
+
 
 
 @media screen and (min-width:415px){
@@ -315,19 +315,19 @@ form{
         flex-direction: column;
         border-bottom: none;
         border-right: black solid 1px;
-    
+
     }
-    
+
     .main {
         grid-column: 4/-1;
-        grid-row: 2/4;    
+        grid-row: 2/4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
     }
     .section1 { width:100%;}
 
-   
+
 }
 
 @media screen and (min-width:615px){
@@ -341,7 +341,7 @@ form{
     }
     .main {
         grid-column: 4/-1;
-        grid-row: 2/4;    
+        grid-row: 2/4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
@@ -349,7 +349,7 @@ form{
 
     .section{
         margin: 1em;
-       
+
     }
     .section img {
         margin-bottom: 0.5em;
@@ -359,11 +359,11 @@ form{
 
     .main1 {
         grid-column: 4/-1;
-        grid-row: 2/4;    
+        grid-row: 2/4;
         display:flex;
         justify-self: center;
     }
-    .section1 { 
+    .section1 {
         width:90%;
         margin: 0 auto}
     .section1 div {
@@ -373,7 +373,7 @@ form{
     .article p {
         margin: 0.5em;
         text-align: left;}
-    
+
     #animada{
         position: relative;
             animation-name: mover-imagen;
@@ -381,18 +381,36 @@ form{
             animation-timing-function: ease-in-out;
             animation-iteration-count: infinite;
         }
-        
+
         @keyframes mover-imagen {
             0% {
                 left: 0;
             }
-        
+
             100% {
                 left: calc(100% - 200px);
             }
-          
-      }    
+
+      }
       .section img:hover {
         transform: scale(1.1);}
-   
+
+}
+
+#textoContacto p {
+    margin: 10px;
+    text-align:center;
+}
+
+.contactos {
+    display: block;
+    height: 40px;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.icono {
+    margin-left: 10px;
+    vertical-align: 35%;
 }
