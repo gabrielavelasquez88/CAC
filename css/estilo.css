@@ -6,9 +6,6 @@
 
 body {
     display: grid;
-
-    width: 100%;
-    height: 100%;
     min-height: 100%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 150px,auto,auto,1fr;
@@ -106,15 +103,10 @@ h1 {
 .aside {
     grid-column: 1/-1;
     grid-row: 2/3;
-    /* display: flex; */
     border-bottom: black solid 1px;
-    /* flex-direction: row;
-    justify-content: center ; */
 }
-/* .aside img {
-    width:100%;
-} */
-.aside .propaganda {display: none;}
+
+.aside .propaganda {display:none;}
 #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
@@ -271,16 +263,20 @@ h1 {
 }
 
 .main1 {
-    grid-column: 1/-1;
+    margin-left:-50px;
+    margin-top: 300px;
+    width: 100%;
+    grid-column: 1/12;
     grid-row: 3/4;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 
 }
 
 .section1 {
+    width:100%;
     margin-top: 1em;
-    max-width: 100%;
+    
 
 }
 .section1 img {
@@ -288,6 +284,9 @@ h1 {
     position: relative;
     left: 0;
     transition: transform 0.5s ease-in-out;
+}
+.section1 iframe { width: 100%;
+    height: auto;
 }
 .article1 {
     width:100%;
@@ -301,6 +300,7 @@ h1 {
     text-align: center;
 }
 .section1 ul  {
+    list-style: none;
     margin-top: 0.5em;
     text-align: left;
     font-size: 1em;
@@ -427,8 +427,19 @@ form{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
     }
+    .main1 {
+        grid-column: 4/-1;
+        grid-row: 2/4;
+        display:flex;
+        justify-self: center;
+        margin: 0;
+    }
     .section1 { width:100%;}
-    #carrosel-contenido {display: none;}
+    .section1 iframe{
+        width:100%;
+        height: auto;
+    }
+    #carrusel-contenido {display: none;}
     .aside .propaganda {display: block;}
     .aside .propaganda img {width:100%}
 
@@ -472,6 +483,9 @@ form{
         width:70%;
         margin: 0 auto;
         margin-bottom: 10px;}
+    .section1 iframe{width:70%;
+        
+    }
     .article p {
         margin: 0.5em;
         text-align: left;}
@@ -517,7 +531,7 @@ form{
     vertical-align: 35%;
 }
 
-#carrosel-contenido {display: none;}
+#carrusel-contenido {display: none;}
 .aside .propaganda {display: block;}
 .aside .propaganda img {width:100%}
 }
