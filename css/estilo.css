@@ -106,15 +106,117 @@ h1 {
 .aside {
     grid-column: 1/-1;
     grid-row: 2/3;
-    display: flex;
+    /* display: flex; */
     border-bottom: black solid 1px;
-    flex-direction: row;
-    justify-content: center ;
+    /* flex-direction: row;
+    justify-content: center ; */
 }
-.aside img {
+/* .aside img {
     width:100%;
+} */
+.aside .propaganda {display: none;}
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 300px;
+    width: 300%;
 }
-
+#carrusel-contenido {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+.imagenes{
+    height: 300px;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@media screen and ( min-width:610px) {
+    #carrusel-caja {
+        display:none;
+    }
+    
+}
 .main {
     grid-column: 1/-1;
     grid-row: 3/4;
@@ -326,9 +428,9 @@ form{
         grid-template-rows: repeat (2, auto);
     }
     .section1 { width:100%;}
-
-
-}
+    #carrosel-contenido {display: none;}
+    .aside .propaganda {display: block;}
+    .aside .propaganda img {width:100%}
 
 @media screen and (min-width:615px){
     .header {height: 70px;}
@@ -413,4 +515,9 @@ form{
 .icono {
     margin-left: 10px;
     vertical-align: 35%;
+}
+
+#carrosel-contenido {display: none;}
+.aside .propaganda {display: block;}
+.aside .propaganda img {width:100%}
 }
