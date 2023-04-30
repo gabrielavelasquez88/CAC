@@ -263,7 +263,7 @@ h1 {
 }
 
 .main1 {
-    margin-left:-50px;
+    margin-left:-5em;
     margin-top: 300px;
     width: 100%;
     grid-column: 1/12;
@@ -274,7 +274,7 @@ h1 {
 }
 
 .section1 {
-    width:100%;
+    width:120%;
     margin-top: 1em;
     
 
@@ -283,21 +283,14 @@ h1 {
     width: 100%;
     position: relative;
     left: 0;
-    transition: transform 0.5s ease-in-out;
 }
 .section1 iframe { width: 100%;
     height: auto;
 }
-.article1 {
-    width:100%;
-}
-.article1 p {
-    font-size: 1em;
-    text-align: left;
-}
+
 .section1 p{
     color: black;
-    text-align: center;
+    text-align: left;
 }
 .section1 ul  {
     list-style: none;
@@ -477,7 +470,7 @@ form{
         justify-self: center;
     }
     .section1 {
-        width:90%;
+        width: 100%;
         margin: 0 auto}
     .section1 div {
         width:70%;
