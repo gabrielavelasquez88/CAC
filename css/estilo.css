@@ -1,7 +1,8 @@
 *{
  padding: 0%;
  margin: 0%;
-
+ font-size: small;
+/* font-family: 'Ysabeau', sans-serif; */
 }
 
 body {
@@ -12,9 +13,12 @@ body {
     grid-gap: 5px;
 }
 h1 {
+    font-family: 'Rock Salt', cursive;
     display:none;
+    font-weight: bold;
 }
 .header {
+    font-family: 'Rock Salt', cursive;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -25,6 +29,7 @@ h1 {
     padding-left: 1em;
 }
  .header p{
+     font-family: 'Rock Salt', cursive;
     color: white;
     align-self: center;
 }
@@ -210,6 +215,7 @@ h1 {
     
 }
 .main {
+    font-family: 'Rock Salt', cursive;
     grid-column: 1/-1;
     grid-row: 3/4;
     display: flex;
@@ -326,6 +332,7 @@ h1 {
     grid-row: 4/5;
     background-color: #000000;
     color: white;
+    font-family: 'Rock Salt', cursive;
 }
 footer div ul li {
     text-decoration: none;
@@ -346,13 +353,18 @@ footer div ul li {
 
 /* Formulario: start */
 .mainsuscripcion {
+
     grid-column: 1/-1;
     grid-row: 2/4;
     display: flex;
     flex-direction: column;
     align-items: left;
+    
 
 
+}
+#suscripcion legend{
+    font-family: 'Ysabeau', sans-serif;
 }
 form{
 
@@ -531,13 +543,17 @@ form{
         transform: scale(1.1);}
 
 }
-
+/* Style Contacto */
 #textoContacto p {
+    font-family: 'Ysabeau', sans-serif;
     margin: 10px;
     text-align:center;
+    font-size: larger;
+    font-weight: bolder;
 }
 
 .contactos {
+    font-family: 'Ysabeau', sans-serif;
     display: block;
     margin-left: 20px;
     margin-top: 8px;
