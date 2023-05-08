@@ -112,7 +112,10 @@ h1 {
     border-bottom: black solid 1px;
 }
 
-.aside .propaganda {display:none;}
+.aside .propaganda {
+    width:100%;
+    
+    display:none;}
 #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
@@ -124,7 +127,7 @@ h1 {
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
     height: 300px;
-    width: 300%;
+    width: 400%;
 }
 #carrusel-contenido {
     display: block;
@@ -138,26 +141,32 @@ h1 {
 }
 .carrusel-elemento {
     float: left;
-    width: 33.333%;
+    width: 25%;
 }
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
@@ -167,20 +176,26 @@ h1 {
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
@@ -190,20 +205,26 @@ h1 {
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
@@ -286,7 +307,7 @@ h1 {
     grid-row: 2/4;
     display: flex;
     flex-direction: column; 
-
+}
 .section1 {
     width:120%;
     margin-top: 1em;
@@ -331,8 +352,8 @@ h1 {
     color: white;
     font-family: 'Rock Salt', cursive;
 }
-footer div ul li {
-    text-decoration: none;
+.footer div ul li {
+    text-decoration:none;
 }
 .footer .ico {
     align-self: center;
@@ -365,7 +386,7 @@ footer div ul li {
 #suscripcion legend{
     font-family: 'Ysabeau', sans-serif;
 }
-form{
+.form {
 
     font-family: 'Ysabeau', sans-serif;
 
@@ -378,7 +399,7 @@ form{
 }
 
 
-      label {
+    label {
         display: block;
         margin-bottom: 5px;
 
