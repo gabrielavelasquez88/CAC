@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        datos=new URLSearchParams(window.location.search)
+        
+        document.write('<table><tr ><th style="border: 2px black solid;">Parametros</th><th style="border: 2px black solid;">Valores</th></tr>')
+            datos.forEach(function (value, key) {
+            document.write('<tr><td style="border: 2px black solid;">'+key+'</td><td style="border: 2px black solid;">'+value+'</td></tr>')
+        });
+    </script>
+</body>
+</html>
