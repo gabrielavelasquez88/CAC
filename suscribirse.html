@@ -40,7 +40,7 @@
         </nav>
         <div class="blank">
             <img src="favicon/favicon-32x32.png" alt="icono Rockanrolla">
-            <p>ocanrolla</p>
+            <p><a href="./index.html">ocanrolla</a></p>
         </div>
         <nav class="nav">
             <div><a href="./index.html">Home</a></div>
@@ -57,29 +57,35 @@
 
     <section id="suscripcion">
 
-            <form action="#" method="post">
+            <form id="formulario" onsubmit="return validacion()">
                 <h3><b>Suscribirme a Rockanrolla</b></h3>
                 <p>Con su suscripcion recibira las ultimas actualizaciones de nuestra páginas y novedades</p>
                 <fieldset>
                     <legend>Datos Personales</legend>
 
+                    <p id="alert-nombre" class="alert alert-none">Formato no valido</p>
                     <label for="nombre">Nombre</label>
                     <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre..." required
                         autocomplete="off">
-
+                    
+                    <p id="alert-apellido" class="alert alert-none">Formato no valido</p>
                     <label for="apellido">Apellido</label>
                     <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido..." required
                         autocomplete="off">
 
+                    <p id="alert-direccion" class="alert alert-none">Formato no valido</p>
                     <label for="direccion">Direccion:</label>
                     <input type="text" name="direccion" placeholder="Ingrese su dirección aqui...">
 
+                    <p id="alert-ciudad" class="alert alert-none">Formato no valido</p>
                     <label for="ciudad">Ciudad: </label>
                     <input type="text" name="ciudad" value="C.A.B.A.">
-
+                    
+                    <p id="alert-cp" class="alert alert-none">Formato no valido</p>
                     <label for="cp">Código Postal:</label>
                     <input type="text" name="cp" placeholder="Ingrese su codigo postal aqui...">
 
+                   
                     <label for="nacimiento">Fecha Nac.(mm/dd/yyyy): </label>
                     <input type="date" name="nacimiento">
 
@@ -89,8 +95,11 @@
                         <input type="radio" name="genero" value="Otro"> Otro
                     </p>
 
+
                     <label for="email"> E-mail</label>
                     <input type="email" name="email" id="email" placeholder="Ingrese su correo ...">
+                    
+                    <p id="alert-password" class="alert alert-none">Formato no valido</p>
                     <label for="password"> Contraseña</label>
                     <input type="password" name="password" id="password">
 
@@ -104,7 +113,6 @@
 
 
             </form>
-
 
     </main>
 
@@ -121,7 +129,7 @@
             <p>Derechos Reservados</p>
         </div>
     </footer>
-
+    <script src="js/validacion.js"></script>
 </body>
 
 </html>

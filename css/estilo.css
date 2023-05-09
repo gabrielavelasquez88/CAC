@@ -19,7 +19,6 @@ h1 {
 }
 .header {
     font-family: 'Rock Salt', cursive;
-    height: 100px;
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -30,9 +29,15 @@ h1 {
     padding-left: 1em;
 }
  .header p{
-     font-family: 'Rock Salt', cursive;
+    font-family: 'Rock Salt', cursive;
     color: white;
     align-self: center;
+}
+header p a {font-family: 'Rock Salt', cursive;
+    color: white;
+    align-self: center;
+    font-size: 1em;
+    text-decoration: none;
 }
 .blank {
     justify-content: flex-end;
@@ -76,7 +81,7 @@ h1 {
     margin-top: 0;
     padding: 0.5em;
     font-size: 0.5em;
-    background-color:rgb(248, 242, 242);
+    background-color:gray;
     border-radius: 5px;
     width: 1em;
   }
@@ -95,7 +100,7 @@ h1 {
 
 .dropdown-content1 a {
     display: block;
-    background-color: white;
+    background-color: grey;
     color: #000000;
     padding: 5px;
     text-decoration: none;
@@ -112,10 +117,7 @@ h1 {
     border-bottom: black solid 1px;
 }
 
-.aside .propaganda {
-    width:100%;
-    
-    display:none;}
+.aside .propaganda {display:none;}
 #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
@@ -127,7 +129,7 @@ h1 {
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
     height: 300px;
-    width: 400%;
+    width: 300%;
 }
 #carrusel-contenido {
     display: block;
@@ -141,32 +143,26 @@ h1 {
 }
 .carrusel-elemento {
     float: left;
-    width: 25%;
+    width: 33.333%;
 }
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    20% {
+    30% {
         margin-left: 0;
     }
-    25% {
+    35% {
         margin-left: -100%;
     }
-    45% {
+    65% {
         margin-left: -100%;
-    }
-    50% {
-        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    75% {
-        margin-left: -300%;
-    }
-    99% {
-        margin-left: -300%;
+    95% {
+        margin-left: -200%;
     }
     100% {
         margin-left: 0;
@@ -176,26 +172,20 @@ h1 {
     0% {
         margin-left: 0;
     }
-    20% {
+    30% {
         margin-left: 0;
     }
-    25% {
+    35% {
         margin-left: -100%;
     }
-    45% {
+    65% {
         margin-left: -100%;
-    }
-    50% {
-        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    75% {
-        margin-left: -300%;
-    }
-    99% {
-        margin-left: -300%;
+    95% {
+        margin-left: -200%;
     }
     100% {
         margin-left: 0;
@@ -205,26 +195,20 @@ h1 {
     0% {
         margin-left: 0;
     }
-    20% {
+    30% {
         margin-left: 0;
     }
-    25% {
+    35% {
         margin-left: -100%;
     }
-    45% {
+    65% {
         margin-left: -100%;
-    }
-    50% {
-        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    75% {
-        margin-left: -300%;
-    }
-    99% {
-        margin-left: -300%;
+    95% {
+        margin-left: -200%;
     }
     100% {
         margin-left: 0;
@@ -300,14 +284,18 @@ h1 {
     flex-direction: column; 
     
 }
+
 .main2 {
+    margin-left:-5em;
+    margin-top: 300px;
     width: 100%;
-    height: 420px;
     grid-column: 1/12;
     grid-row: 2/4;
     display: flex;
     flex-direction: column; 
+    font-size: 1.5em;
 }
+
 .section1 {
     width:120%;
     margin-top: 1em;
@@ -320,7 +308,7 @@ h1 {
     left: 0;
 }
 .section1 iframe { width: 100%;
-    height: 300px;
+    height: auto;
 }
 
 .section1 p{
@@ -352,8 +340,14 @@ h1 {
     color: white;
     font-family: 'Rock Salt', cursive;
 }
-.footer div ul li {
-    text-decoration:none;
+.footer li {
+    
+    text-decoration: none;
+}
+.footer a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
 }
 .footer .ico {
     align-self: center;
@@ -366,8 +360,6 @@ h1 {
     padding: 0.5px;
 }
 .footernav div a {
-    margin-left: 20px;
-    color:white;
     text-decoration: none;
 }
 
@@ -386,7 +378,7 @@ h1 {
 #suscripcion legend{
     font-family: 'Ysabeau', sans-serif;
 }
-.form {
+form{
 
     font-family: 'Ysabeau', sans-serif;
 
@@ -399,7 +391,7 @@ h1 {
 }
 
 
-    label {
+      label {
         display: block;
         margin-bottom: 5px;
 
@@ -438,20 +430,19 @@ h1 {
         display:flex;
 
     }
-
-.alert { color: red;
-    font-weight: bolder  ;
-    background-color: white;
-    border-radius: 5px;
+.alert {
     width: fit-content;
-    border:red solid 3px;
+    font-size: 1.5em;
+    color: red;
+    background-color: white;
+    border: 2px red solid;
+    border-radius: 4px;
 }
-.alert-none {display:none}
+.alert-none{display: none;}
+
 
 @media screen and (min-width:415px){
-    .header {
-        height: 80px;
-    }
+
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
     .blank { width:10em}
@@ -479,17 +470,24 @@ h1 {
         justify-self: center;
         margin: 0;
     }
+    .main2 {
+        grid-column: 1/-1;
+        grid-row: 2/4;
+        display:flex;
+        justify-self: center;
+        margin: 0;
+    }
     .section1 { width:100%;}
     .section1 iframe{
         width:100%;
-        height: 300px;
+        height: auto;
     }
     #carrusel-contenido {display: none;}
     .aside .propaganda {display: block;}
     .aside .propaganda img {width:100%}
 
 @media screen and (min-width:615px){
-    .header {height: 50px;}
+    .header {height: 70px;}
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
     .blank { width:20em}
@@ -504,10 +502,7 @@ h1 {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
     }
-    .main2 {
-        grid-column: 1/-1;
-        grid-row: 2/4;
-        }
+
     .section{
         margin: 1em;
 
@@ -540,7 +535,7 @@ h1 {
         margin: 0 auto;
         margin-bottom: 10px;}
     .section1 iframe{width:70%;
-        height: 300px;
+        
     }
     .article p {
         margin: 0.5em;
