@@ -32,7 +32,7 @@ function validacion() {
     if (!regNombre.test(nombre.value) || !nombre.value.trim()) {
         
         alertNombre.classList.remove("alert-none");
-        errores.push ("alert-nombre"); 
+        
         return false;}
         else {
              alertNombre.classList.add("alert-none");}    
@@ -40,46 +40,40 @@ function validacion() {
     if (!regNombre.test(apellido.value) || !apellido.value.trim()) {
         
         alertApellido.classList.remove("alert-none");
-        errores.push ("alert-apellido");
+        
         return false;}
     else {
         alertApellido.className="alert alert-none";}   
     if (!regDireccion.test(direccion.value)) {
         
         alertDireccion.classList.remove("alert-none");
-        errores.push ("alert-direccion");
+        
         return false;}
     else {
         alertDireccion.className="alert alert-none";}   
     if (!regNombre.test(ciudad.value)) {
-        alert ("Formato invalido");
+        
         alertCiudad.classList.remove("alert-none");
-        errores.push ("alert-ciudad");
+        
         return false;}
     else {
         alertCiudad.className="alert alert-none";}   
     if (!regCp.test(cp.value)) {
-        alert ("Formato invalido");
+        
         alertCp.classList.remove("alert-none");
-        errores.push ("alert-cp");
+        
         return false;}
     else {
         alertCp.className="alert alert-none";}  
     if (pasword.value.length <= 8) {
-        alert ("Formato invalido");
+        
         alertPasword.classList.remove("alert-none");
-        errores.push ("alert-pasword");
+        
         return false;    
         
     }else {
         alertPasword.className="alert alert-none"}
 
-    alert(errores.length)
-    if (errores.length>0) {
-        alert(errores)
-        console.log(errores);
-        return false
-        }
         
     alert ("Formulario Enviado");
     return false;    
