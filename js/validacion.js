@@ -76,7 +76,7 @@ function validacion() {
 
         
     alert ("Formulario Enviado");
-    return false;    
+    return true;    
         
        
 }
