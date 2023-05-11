@@ -439,7 +439,14 @@ form{
     border-radius: 4px;
 }
 .alert-none{display: none;}
-
+.exito {
+    width: fit-content;
+    font-size: 2em;
+    color: green;
+    background-color: greenyellow;
+    border: 2px black solid;
+    border-radius: 4px;
+}
 
 @media screen and (min-width:415px){
 
