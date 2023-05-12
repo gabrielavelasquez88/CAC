@@ -1,7 +1,7 @@
 *{
  padding: 0%;
  margin: 0%;
- font-size: small;
+ font-size: large;
 /* font-family: 'Ysabeau', sans-serif; */
 }
 
@@ -129,7 +129,7 @@ header p a {font-family: 'Rock Salt', cursive;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
     height: 300px;
-    width: 300%;
+    width: 400%;
 }
 #carrusel-contenido {
     display: block;
@@ -143,26 +143,32 @@ header p a {font-family: 'Rock Salt', cursive;
 }
 .carrusel-elemento {
     float: left;
-    width: 33.333%;
+    width: 25%;
 }
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
@@ -172,20 +178,26 @@ header p a {font-family: 'Rock Salt', cursive;
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
@@ -195,31 +207,32 @@ header p a {font-family: 'Rock Salt', cursive;
     0% {
         margin-left: 0;
     }
-    30% {
+    20% {
         margin-left: 0;
     }
-    35% {
+    25% {
         margin-left: -100%;
     }
-    65% {
+    45% {
         margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
     }
     70% {
         margin-left: -200%;
     }
-    95% {
-        margin-left: -200%;
+    75% {
+        margin-left: -300%;
+    }
+    99% {
+        margin-left: -300%;
     }
     100% {
         margin-left: 0;
     }
 }
-@media screen and ( min-width:610px) {
-    #carrusel-caja {
-        display:none;
-    }
-    
-}
+
 .main {
     font-family: 'Rock Salt', cursive;
     grid-column: 1/-1;
@@ -308,7 +321,7 @@ header p a {font-family: 'Rock Salt', cursive;
     left: 0;
 }
 .section1 iframe { width: 100%;
-    height: auto;
+    height: 300px;
 }
 
 .section1 p{
@@ -425,6 +438,7 @@ form{
     }
 
     .main1 {
+        
         grid-column: 4/-1;
         grid-row: 2/4;
         display:flex;
@@ -433,7 +447,9 @@ form{
 
 
 @media screen and (min-width:415px){
-
+    #carrusel-caja {
+        display:none;
+    }
     .nav div{ display: inline;}
     .dropdown1 {display:none;}
     .blank { width:10em}
@@ -471,7 +487,7 @@ form{
     .section1 { width:100%;}
     .section1 iframe{
         width:100%;
-        height: auto;
+        height: 300px;
     }
     #carrusel-contenido {display: none;}
     .aside .propaganda {display: block;}
@@ -525,7 +541,9 @@ form{
         width:70%;
         margin: 0 auto;
         margin-bottom: 10px;}
-    .section1 iframe{width:70%;
+    .section1 iframe{
+        width:70%;
+        height: 300px;
         
     }
     .article p {
