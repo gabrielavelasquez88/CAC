@@ -1,10 +1,11 @@
+/* Estilo general */
 *{
  padding: 0%;
  margin: 0%;
  font-size: 16px;
 /* font-family: 'Ysabeau', sans-serif; */
 }
-
+/* Grid para el maquetado principal */
 body {
     display: grid;
     min-height: 100%;
@@ -12,11 +13,9 @@ body {
     grid-template-rows: 150px,auto,auto,1fr;
     grid-gap: 5px;
 }
-h1 {
-    font-family: 'Rock Salt', cursive;
-    display:none;
-    font-weight: bold;
-}
+h1 {display:none;}
+
+/* Encabezado Flex*/
 .header {
     font-family: 'Rock Salt', cursive;
     display: flex;
@@ -28,25 +27,33 @@ h1 {
     grid-row: 1/2;
     padding-left: 1em;
 }
+/* Fuente Logo encabezado */
  .header p{
     font-family: 'Rock Salt', cursive;
     color: white;
     align-self: center;
 }
+
+/* Links Encabezado */
 header p a {font-family: 'Rock Salt', cursive;
     color: white;
     align-self: center;
     font-size: 1em;
     text-decoration: none;
 }
+
+/* Clase Logo */
 .blank {
     justify-content: flex-end;
     display: inline-flex;
     width:100em;
 }
+
 .blank p {
     font-size: 1.5em;
 }
+
+/* Menu normal */
 .nav {
     width: 100%;
     justify-self: right;
@@ -55,17 +62,22 @@ header p a {font-family: 'Rock Salt', cursive;
     align-self: center;
     align-items: center;
 }
+
+/* Contenedor Menu */
 .nav div {
     display: none;
     padding: 0.5 em;
     margin: 0.5em;
-
 }
+
+/* Links Contenedor */
 .nav div a {
     color: white;
     text-decoration: none;
 }
 
+/* Menu Hamb */
+/* Contenedor */
 .dropdown1 {
     justify-self: flex-start;
     margin: 0.5;
@@ -76,16 +88,17 @@ header p a {font-family: 'Rock Salt', cursive;
     z-index: 3;
   }
 
-
+/* Boton con imagen */
   #boton1 {
     margin-top: 0;
     padding: 0.5em;
     font-size: 0.5em;
-    background-color:gray;
+    background-color:white;
     border-radius: 5px;
     width: 1em;
   }
 
+  /* Contenedor Lista Desplegable */
 .dropdown-content1 {
 
     display: none;
@@ -94,30 +107,40 @@ header p a {font-family: 'Rock Salt', cursive;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba( 0,0,0,1);
   }
+
+/* Accion Mostrar Menu */
 .dropdown1:hover .dropdown-content1 {
     display: block;
 }
-
+/* Lista Desplegable */
 .dropdown-content1 a {
     display: block;
     background-color: grey;
     color: #000000;
     padding: 5px;
+    border:2px black solid;
     text-decoration: none;
 }
 
+/* Accion Cambiar Color */
 .dropdown-content1 a:hover {
-    color: rgb(95, 6, 184);
+    color: white;
 
 }
 
+/* Propagandas */
+/* Contenedor  */
 .aside {
     grid-column: 1/-1;
     grid-row: 2/3;
     border-bottom: black solid 1px;
 }
 
+/* No mostrar Imagenes Fijas */
 .aside .propaganda {display:none;}
+
+/* Carrusel */
+/* Contenedor con animaciones */
 #carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
@@ -131,20 +154,26 @@ header p a {font-family: 'Rock Salt', cursive;
     height: 300px;
     width: 400%;
 }
+/* Contenedores Imagenes */
 #carrusel-contenido {
     display: block;
     margin: 0 auto;
     overflow: hidden;
     text-align: left;
 }
+
 .imagenes{
     height: 300px;
     width: 100%;
 }
+/* Cada imagen */
 .carrusel-elemento {
     float: left;
     width: 25%;
 }
+
+/* Transiciones */
+
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
@@ -233,6 +262,7 @@ header p a {font-family: 'Rock Salt', cursive;
     }
 }
 
+/* Contenedor Principal  */
 .main {
     font-family: 'Rock Salt', cursive;
     grid-column: 1/-1;
@@ -242,11 +272,13 @@ header p a {font-family: 'Rock Salt', cursive;
 
 }
 
+/* Contenedor Secundario */
 .section {
     margin-top: 1em;
     max-width: 100%;
 
 }
+
 .section img {
     width: 100%;
     position: relative;
@@ -258,16 +290,20 @@ header p a {font-family: 'Rock Salt', cursive;
     color: black;
     text-align: center;
 }
+
 .section ul  {
     margin-top: 0.5em;
     text-align: left;
     font-size: 1em;
     font-weight: bold;
 }
+
 .section ul li {
     font-size: 0.9em;
     font-weight: normal;
 }
+
+/* Contenedor Textos */
 .article {
     width:100%;
 }
@@ -277,6 +313,7 @@ header p a {font-family: 'Rock Salt', cursive;
     margin-bottom: 0.5em;
 }
 
+/* Texto Destacado */
 .article .literal {
 
     margin-top: 0.5em;
@@ -287,9 +324,10 @@ header p a {font-family: 'Rock Salt', cursive;
     background-color: rgb(172, 169, 169);
 }
 
-.main1 {
-    margin-left:-5em;
-    margin-top: 300px;
+/* Contendor Principal Paginas de Bandas */
+.mainBanda {
+    
+    margin-left: 10px;
     width: 100%;
     grid-column: 1/12;
     grid-row: 3/4;
@@ -298,36 +336,29 @@ header p a {font-family: 'Rock Salt', cursive;
     
 }
 
-.main2 {
-    margin-left:-5em;
-    margin-top: 300px;
-    width: 100%;
-    grid-column: 1/12;
-    grid-row: 2/4;
-    display: flex;
-    flex-direction: column; 
-    font-size: 1.5em;
-}
-
+/* Contenedor Secundario Bandas */
 .section1 {
-    width:120%;
+    width:100%;
     margin-top: 1em;
-    
-
 }
+
+/* Imagenes */
 .section1 img {
     width: 100%;
     position: relative;
     left: 0;
 }
+/* Ifame */
 .section1 iframe { width: 100%;
     height: 300px;
 }
 
+/* Textos */
 .section1 p{
     color: black;
     text-align: left;
 }
+/* Listas */
 .section1 ul  {
     list-style: none;
     margin-top: 0.5em;
@@ -340,11 +371,14 @@ header p a {font-family: 'Rock Salt', cursive;
     font-size: 0.9em;
     font-weight: normal;
 }
+/* Links Lista */
 .section1 ul li a{
     text-decoration: none;
     color:blue;
 }
 
+/* Pie de pagina */
+/* Conenedor */
 .footer{
     display: flex;
     grid-column: 1/-1;
@@ -353,25 +387,33 @@ header p a {font-family: 'Rock Salt', cursive;
     color: white;
     font-family: 'Rock Salt', cursive;
 }
+/* Lista Menu*/
 .footer li {
     
     text-decoration: none;
 }
+
+/* Links Menu */
 .footer a {
     margin-left: 10px;
     text-decoration: none;
     color: white;
 }
+
+/* Iconos Contacto */
 .footer .ico {
     align-self: center;
     text-align: center;
     width: 100%;
 
 }
+
+/* Contenedores Secundarios */
 .footernav div {
     margin: 0.5px;
     padding: 0.5px;
 }
+
 .footernav div a {
     text-decoration: none;
 }
@@ -446,12 +488,51 @@ form{
     }
 
 
+/* Style Contacto */
+/* Contenedor Principal Contactos */
+.mainContacto {
+    width: 100%;
+    grid-column: 1/12;
+    grid-row: 2/4;
+    display: flex;
+    flex-direction: column; 
+    font-size: 1.5em;
+}
+
+#textoContacto p {
+    font-family: 'Ysabeau', sans-serif;
+    margin: 10px;
+    text-align:center;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.contactos {
+    font-family: 'Ysabeau', sans-serif;
+    display: block;
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+.icono {
+    margin-left: 10px;
+    vertical-align: 35%;
+}
+
+
+
+/* Media para pantallas mayores a 415px */
+
 @media screen and (min-width:415px){
+    
+    /* Esconder Carrusel */
     #carrusel-caja {
         display:none;
     }
-    
+    /* Ensanchas contenedor de logo */
     .blank { width:100em}
+
+    /* Ubicar Aside al Costado */
     .aside {
         grid-column: 1/4;
         grid-row: 2/4;
@@ -462,6 +543,7 @@ form{
 
     }
 
+    /* Mover Main a la Derecha */
     .main {
         grid-column: 4/-1;
         grid-row: 2/4;
@@ -469,14 +551,14 @@ form{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat (2, auto);
     }
-    .main1 {
+    .mainBanda {
         grid-column: 4/-1;
         grid-row: 2/4;
         display:flex;
         justify-self: center;
         margin: 0;
     }
-    .main2 {
+    .mainContacto {
         grid-column: 1/-1;
         grid-row: 2/4;
         display:flex;
@@ -488,10 +570,18 @@ form{
         width:100%;
         height: 300px;
     }
+    
+    /* Esconder Carrusel */
     #carrusel-contenido {display: none;}
+    
+    /* Mostrar Aside con Propagandas */
     .aside .propaganda {display: block;}
     .aside .propaganda img {width:100%}
 
+
+}
+
+/* Media para pantallas mayores a 615px */
 @media screen and (min-width:615px){
     .header {height: 70px;}
     .nav div{ display: inline;}
@@ -549,6 +639,8 @@ form{
         margin: 0.5em;
         text-align: left;}
 
+    /* Animacion Imagenes Menu Principal */
+
     #animada{
         position: relative;
             animation-name: mover-imagen;
@@ -571,28 +663,4 @@ form{
         transform: scale(1.1);}
 
 }
-/* Style Contacto */
-#textoContacto p {
-    font-family: 'Ysabeau', sans-serif;
-    margin: 10px;
-    text-align:center;
-    font-size: larger;
-    font-weight: bolder;
-}
 
-.contactos {
-    font-family: 'Ysabeau', sans-serif;
-    display: block;
-    margin-left: 20px;
-    margin-top: 8px;
-}
-
-.icono {
-    margin-left: 10px;
-    vertical-align: 35%;
-}
-
-#carrusel-contenido {display: none;}
-.aside .propaganda {display: block;}
-.aside .propaganda img {width:100%}
-}
