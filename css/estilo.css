@@ -569,15 +569,12 @@ form{
         grid-template-rows: repeat (2, auto);
     }
 
-    .section{
-        margin: 1em;
-
-    }
+    
     .section img {
         margin-bottom: 0.5em;
         border-radius: 5px;
         width: 100%;
-    } */
+    } 
 
     .main1 {
         grid-column: 4/-1;
