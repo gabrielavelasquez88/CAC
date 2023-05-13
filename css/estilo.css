@@ -275,14 +275,11 @@ header p a {font-family: 'Rock Salt', cursive;
 /* Contenedor Secundario */
 .section {
     margin-top: 1em;
-    max-width: 100%;
-
+    width: 100%;
 }
 
 .section img {
     width: 100%;
-    position: relative;
-    left: 0;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -291,17 +288,6 @@ header p a {font-family: 'Rock Salt', cursive;
     text-align: center;
 }
 
-.section ul  {
-    margin-top: 0.5em;
-    text-align: left;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.section ul li {
-    font-size: 0.9em;
-    font-weight: normal;
-}
 
 /* Contenedor Textos */
 .article {
@@ -470,22 +456,6 @@ form{
       }
 
 /* Formulario: end */
-    .section{
-        margin: 1em;
-
-    }
-    .section img {
-        border-radius: 5px;
-        width: 100%;
-    }
-
-    .main1 {
-        
-        grid-column: 4/-1;
-        grid-row: 2/4;
-        display:flex;
-
-    }
 
 
 /* Style Contacto */
