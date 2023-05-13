@@ -1,7 +1,7 @@
 *{
  padding: 0%;
  margin: 0%;
- font-size: large;
+ font-size: 16px;
 /* font-family: 'Ysabeau', sans-serif; */
 }
 
@@ -42,7 +42,7 @@ header p a {font-family: 'Rock Salt', cursive;
 .blank {
     justify-content: flex-end;
     display: inline-flex;
-    width:40em;
+    width:100em;
 }
 .blank p {
     font-size: 1.5em;
@@ -450,9 +450,8 @@ form{
     #carrusel-caja {
         display:none;
     }
-    .nav div{ display: inline;}
-    .dropdown1 {display:none;}
-    .blank { width:10em}
+    
+    .blank { width:100em}
     .aside {
         grid-column: 1/4;
         grid-row: 2/4;
@@ -467,7 +466,7 @@ form{
         grid-column: 4/-1;
         grid-row: 2/4;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat (2, auto);
     }
     .main1 {
