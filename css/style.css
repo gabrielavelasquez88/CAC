@@ -1,7 +1,12 @@
 *{  font-size: 20px;
     max-width: 100%;}
+
+.header{height: 100px;
+}
+
 .general {
     width: 100%;
+    min-height: 400px;
     font-family: 'Rock Salt', cursive;
     grid-column: 1/-1;
     display: flex;
@@ -10,10 +15,8 @@
     
 }
 .apiH2 {
-    
     font-size: 2em;
     font-weight: bolder;
-   
     text-align: center;
 }
 .apiImagen {
@@ -53,15 +56,9 @@
     justify-content:flex-start;
     align-items: center;
     background-image: none;
-    background-color: aqua;}
+}
 
-#Input {
-    margin-left: 40px;
-    margin-top: 30px;
-    align-self: center;
-    border: black 2px solid;
-    background-color: aqua;
-    width: 200px;}
+.explicacion{text-align: center;}
 
 .ul { font-weight: bolder;}
 
@@ -73,16 +70,15 @@
     list-style: none;
 }
 .apiSelect {
-    margin-top: 10px;
+    margin-left: 10px;
     display: inline;
     width:fit-content;
     font-size: 2em;
 }
 .boton {
-    margin-top: 25px;
     margin-left: 40px;
-    background-color: greenyellow;
+    background-color: rgb(8, 252, 81);
     display: inline;
-    font-size: 1em;
+    font-size: 1.5em;
     width: fit-content;
 }

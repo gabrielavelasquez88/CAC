@@ -19,23 +19,20 @@ function getChar (){
             label.innerText='Elige tu Pokemon';
             const explicacion=document.createElement('p');
             explicacion.className='explicacion';
-            explicacion.innerText='(Busca tu Pokemon y escribe su nombre para ver)';
+            explicacion.innerText='(Elije tu Pokemon y pulsa Mostrar)';
 
             let formulario=document.getElementById('apiFormulario');
-
-            
 
             const seleccion= document.getElementById('apiSelect');
 
             const opcion=document.createElement('option');
-            let boton=document.createElement('input');
+            let boton=document.createElement('button');
             boton.className='boton'
             boton.type='submit';    
             boton.textContent='Aceptar'
 
             const divSelect=document.createElement('div');
             divSelect.className='divSelect';
-
 
             general.appendChild(label);
             general.appendChild(explicacion);
@@ -53,7 +50,7 @@ function getChar (){
 }    
 const mostrar=event=> {
     event.preventDefault();
-    const { value } = event.target.pokemon;
+    const { value } = event.target.select;
     console.log(value);
     
     fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
@@ -104,8 +101,7 @@ const mostrar=event=> {
             }
             texto=texto+'</ul>'
             divTexto.innerHTML=texto;
-            
-            
+                        
         })
      }
 
