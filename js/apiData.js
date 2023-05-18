@@ -87,15 +87,15 @@ const mostrar=event=> {
             divCarta.appendChild(imagen);
             divCarta.appendChild(divH2);
             divH2.innerHTML='<h2>'+capitalize(resultado.name)+'</h2>'
-            texto='<p>Nombre: '+capitalize(resultado.name)+'<p>';
-            texto=texto+'<p>Tipo de Pokemon: '
+            texto='<p><b>Nombre: </b>'+capitalize(resultado.name)+'<p>';
+            texto=texto+'<p><b>Tipo de Pokemon: </b>'
             for (let i=0;i<resultado.types.length;i++){
                 texto=texto+' '+capitalize(resultado.types[i].type.name);
             };
             texto=texto+'<p>';
-            texto=texto+'<p>Altura: '+resultado.height+'</p>';
-            texto=texto+'<p>Peso: '+resultado.weight+'</p>'
-            texto=texto+'<p>Habilidades: '
+            texto=texto+'<p><b>Altura: </b>'+resultado.height+'</p>';
+            texto=texto+'<p><b>Peso: </b>'+resultado.weight+'</p>'
+            texto=texto+'<p><b>Habilidades: </b>'
             for (let i=0;i<resultado.abilities.length;i++){
                 texto=texto+' ('+(parseInt(i)+1)+') '+capitalize(resultado.abilities[i].ability.name);
             }

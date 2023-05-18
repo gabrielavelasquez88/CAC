@@ -82,3 +82,12 @@
     font-size: 1.5em;
     width: fit-content;
 }
+
+@media screen and (max-width:415px) {
+    *{font-size: 10px;}
+    .apiSelect {width: 65%;}
+}
+@media screen and (max-width:750px){
+    *{font-size:10px;}
+    
+}
