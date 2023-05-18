@@ -371,16 +371,16 @@ header p a {font-family: 'Rock Salt', cursive;
     grid-row: 4/5;
     background-color: #000000;
     color: white;
-    font-family: 'Rock Salt', cursive;
+    font-family:'Times New Roman', Times, serif;
+    
 }
 /* Lista Menu*/
-.footer li {
-    
-    text-decoration: none;
-}
+.footer li {text-decoration: none;}
 
 /* Links Menu */
 .footer a {
+    margin-bottom: 15px;
+    font-size: 1.3em;
     margin-left: 10px;
     text-decoration: none;
     color: white;

@@ -1,0 +1,88 @@
+*{  font-size: 20px;
+    max-width: 100%;}
+.general {
+    width: 100%;
+    font-family: 'Rock Salt', cursive;
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.apiH2 {
+    
+    font-size: 2em;
+    font-weight: bolder;
+   
+    text-align: center;
+}
+.apiImagen {
+    background-color: rgb(40, 248, 120);
+    border-bottom: black 3px solid;
+    width: 300px;}
+.apiCarta {
+    background-color: rgb(40, 248, 120);
+    margin-top: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    border: black 3px solid;  
+}
+.apiTexto {
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    display: inline;
+    font-size: 2em;
+}
+.apiContenedor {
+    margin: 20px;
+    display: flex;
+    width: fit-content;}
+.apiLabel {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bolder;
+}
+ .explicacion {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+.apiFormulario {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-image: none;
+    background-color: aqua;}
+
+#Input {
+    margin-left: 40px;
+    margin-top: 30px;
+    align-self: center;
+    border: black 2px solid;
+    background-color: aqua;
+    width: 200px;}
+
+.ul { font-weight: bolder;}
+
+.li {margin-top: 5px;
+    margin-left: 100px;
+    
+    font-display: none;
+    font-weight: normal;
+    list-style: none;
+}
+.apiSelect {
+    margin-top: 10px;
+    display: inline;
+    width:fit-content;
+    font-size: 2em;
+}
+.boton {
+    margin-top: 25px;
+    margin-left: 40px;
+    background-color: greenyellow;
+    display: inline;
+    font-size: 1em;
+    width: fit-content;
+}
