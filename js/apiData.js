@@ -6,9 +6,9 @@ let array=[]
 
 
 function getChar (){
-    let data;
+    let data=[];
     
-    fetch (`https://pokeapi.co/api/v2/pokemon?limit=100&offset=0`)
+    fetch (`https://pokeapi.co/api/v2/pokemon?limit=10000&offset=0`)
         .then (res =>res.json())
         .then (res=> {
             console.log(res);
@@ -40,9 +40,14 @@ function getChar (){
             divSelect.appendChild(formulario);
             
             formulario.appendChild(boton);
-
-            res.results.forEach(element => {
-                texto=texto+'<option>'+capitalize(element.name)+'</option>'
+            data
+            res.results.forEach(element=> {
+                data.push(element.name);
+            })
+            data.sort();
+            console.log(data);
+            data.forEach(element => {
+                texto=texto+'<option>'+capitalize(element)+'</option>'
 
             });
             seleccion.innerHTML=texto;
