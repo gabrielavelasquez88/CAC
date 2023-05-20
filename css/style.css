@@ -51,6 +51,8 @@
  .explicacion {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
+    align-self:flex-start;
+    margin-left: 10px;
 }
 .apiFormulario {
     display: flex;
@@ -59,7 +61,9 @@
     background-image: none;
 }
 
-.explicacion{text-align: center;}
+.explicacion{
+    font-size: 1em;
+    text-align: center;}
 
 .ul { font-weight: bolder;}
 
@@ -74,7 +78,7 @@
     margin-left: 10px;
     display: inline;
     width:fit-content;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .boton {
     margin-left: 40px;

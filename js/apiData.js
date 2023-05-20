@@ -29,10 +29,9 @@ function getChar (){
             let boton=document.createElement('button');
             boton.className='boton'
             boton.type='submit';    
-            boton.textContent='Aceptar'
+            boton.textContent='Mostrar'
 
-            const divSelect=document.createElement('div');
-            divSelect.className='divSelect';
+            const divSelect=document.getElementById('divSelect')
 
             general.appendChild(label);
             general.appendChild(explicacion);
@@ -47,7 +46,7 @@ function getChar (){
             data.sort();
             console.log(data);
             data.forEach(element => {
-                texto=texto+'<option>'+capitalize(element)+'</option>'
+                texto=texto+'<option>'+capitalize(element)+'</option>';
 
             });
             seleccion.innerHTML=texto;
@@ -63,10 +62,10 @@ const mostrar=event=> {
         .then (resultado => {
             
             let imagen=document.createElement('img');
-            imagen.className='apiImagen'
+            imagen.className='apiImagen';
 
             let divContenedor=document.getElementById('apiContenedor');
-            
+            divContenedor.innerHTML='';
 
             let divCarta= document.createElement ('div');
             divCarta.className='apiCarta';
