@@ -66,7 +66,7 @@ const mostrar=event=> {
             imagen.className='apiImagen'
 
             let divContenedor=document.getElementById('apiContenedor');
-            divContenedor.innerHTML='';
+            
 
             let divCarta= document.createElement ('div');
             divCarta.className='apiCarta';

@@ -1,5 +1,5 @@
-*{  font-size: 20px;
-    max-width: 100%;}
+/* *{  font-size: 20px;
+    max-width: 100%;} */
 
 .header{height: 100px;
 }
@@ -40,7 +40,8 @@
 .apiContenedor {
     margin: 20px;
     display: flex;
-    width: fit-content;}
+    width: fit-content;
+   }
 .apiLabel {
     text-align: center;
     margin-bottom: 20px;
@@ -84,10 +85,21 @@
 }
 
 @media screen and (max-width:415px) {
-    *{font-size: 10px;}
+    *{font-size: 20px;}
     .apiSelect {width: 65%;}
+    .apiContenedor{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;}
+    .apiImagen{width: 100%}
+    .apiCarta{width:100%}
 }
 @media screen and (max-width:750px){
     *{font-size:10px;}
+    .apiCarta{width:65%}
+    .apiImagen{max-width:250px;
+        width:100%;
+        
+    }
     
 }
