@@ -466,6 +466,7 @@ form{
 /* Contenedor Principal Contactos */
 .mainContacto {
     width: 100%;
+    min-height: 500px;
     grid-column: 1/12;
     grid-row: 2/4;
     display: flex;

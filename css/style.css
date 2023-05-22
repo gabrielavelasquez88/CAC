@@ -1,12 +1,14 @@
 /* *{  font-size: 20px;
     max-width: 100%;} */
 
-.header{height: 100px;
+.header{
+    font-size: 2em;
+    height: 100px;
 }
 
 .general {
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
     font-family: 'Rock Salt', cursive;
     grid-column: 1/-1;
     display: flex;
@@ -89,7 +91,10 @@
 }
 
 @media screen and (max-width:415px) {
-    *{font-size: 20px;}
+
+    *{font-size: 10px;} 
+    .header p a {font-size:24px}
+    .dropdown-content1 a { font-size: 16px;}
     .apiSelect {width: 65%;}
     .apiContenedor{
         display: flex;
@@ -97,9 +102,11 @@
         max-width: 100%;}
     .apiImagen{width: 100%}
     .apiCarta{width:100%}
+    #boton1 {width:0.7em}
 }
 @media screen and (max-width:750px){
     *{font-size:10px;}
+    .header p {font-size: 20px;}
     .apiCarta{width:65%}
     .apiImagen{max-width:250px;
         width:100%;
