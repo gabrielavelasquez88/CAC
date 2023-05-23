@@ -366,6 +366,7 @@ header p a {font-family: 'Rock Salt', cursive;
 /* Pie de pagina */
 /* Conenedor */
 .footer{
+    
     display: flex;
     grid-column: 1/-1;
     grid-row: 4/5;
@@ -388,6 +389,7 @@ header p a {font-family: 'Rock Salt', cursive;
 
 /* Iconos Contacto */
 .footer .ico {
+    font-family: 'Rock Salt', cursive;
     align-self: center;
     text-align: center;
     width: 100%;
@@ -396,6 +398,8 @@ header p a {font-family: 'Rock Salt', cursive;
 
 /* Contenedores Secundarios */
 .footernav div {
+    font-family: 'Rock Salt', cursive;
+    font-size:xx-small;
     margin: 0.5px;
     padding: 0.5px;
 }
@@ -462,6 +466,7 @@ form{
 /* Contenedor Principal Contactos */
 .mainContacto {
     width: 100%;
+    min-height: 500px;
     grid-column: 1/12;
     grid-row: 2/4;
     display: flex;
