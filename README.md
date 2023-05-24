@@ -14,6 +14,6 @@ Informacion sobre las consignas solicitadas del TPO
 - El sitio index.html contiene la transicion solicitada
 - La estructura html esta maquetada con Grid
 - La pagina pokeApi.html consume una API REST del sitio pokeapi.co
-- El desarrollo del sitio se puede vizualizar en Github Pages en este enlace ...
+- El desarrollo del sitio se puede vizualizar en Github Pages en este enlace https://gabrielavelasquez88.github.io/CAC/
 
 
