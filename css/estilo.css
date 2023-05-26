@@ -133,7 +133,6 @@ header p a {font-family: 'Rock Salt', cursive;
 .aside {
     grid-column: 1/-1;
     grid-row: 2/3;
-    border-bottom: black solid 1px;
 }
 
 /* No mostrar Imagenes Fijas */
@@ -151,7 +150,7 @@ header p a {font-family: 'Rock Salt', cursive;
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
-    height: 300px;
+    height: 150px;
     width: 400%;
 }
 /* Contenedores Imagenes */
@@ -163,7 +162,7 @@ header p a {font-family: 'Rock Salt', cursive;
 }
 
 .imagenes{
-    height: 300px;
+    height: 180px;
     width: 100%;
 }
 /* Cada imagen */
@@ -415,7 +414,7 @@ header p a {font-family: 'Rock Salt', cursive;
     grid-row: 2/4;
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     
 
 
@@ -426,12 +425,12 @@ header p a {font-family: 'Rock Salt', cursive;
 form{
 
     font-family: 'Ysabeau', sans-serif;
-
-    background-image:url(../img/fondo.jpg);
+    
+    /* background-image:url(../img/fondo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: white; */
 
 }
 
@@ -439,11 +438,12 @@ form{
       label {
         display: block;
         margin-bottom: 5px;
-
+        margin-left: 40px;
       }
 
       input[type="text"], input[type="email"], input[type="date"],input[type="password"], textarea {
-        width: 80%;
+        margin-left: 40px;
+        width: 60%;
         padding: 10px;
         margin-bottom: 20px;
         border-radius: 5px;
@@ -509,10 +509,12 @@ form{
 
     /* Ubicar Aside al Costado */
     .aside {
+        
         grid-column: 1/4;
         grid-row: 2/4;
         display: flex;
         flex-direction: column;
+        align-items: center;
         border-bottom: none;
         border-right: black solid 1px;
 
@@ -540,6 +542,9 @@ form{
         justify-self: center;
         margin: 0;
     }
+    .section {
+        margin: 20px auto;
+        width:90%}
     .section1 { width:100%;}
     .section1 iframe{
         width:100%;
@@ -551,7 +556,12 @@ form{
     
     /* Mostrar Aside con Propagandas */
     .aside .propaganda {display: block;}
-    .aside .propaganda img {width:100%}
+    
+    .aside .propaganda img {
+        width:100%;
+        height: 190px;
+        margin:0 auto;
+    }
 
 
 }
@@ -573,13 +583,6 @@ form{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat (2, auto);
     }
-
-    
-    .section img {
-        margin-bottom: 0.5em;
-        border-radius: 5px;
-        width: 100%;
-    } 
 
     .main1 {
         grid-column: 4/-1;
