@@ -378,10 +378,10 @@ header p a {font-family: 'Rock Salt', cursive;
 .footer li {text-decoration: none;}
 
 /* Links Menu */
-.footer a {
+.footer .footernav a {
+   
     margin-bottom: 15px;
-    font-size: 1.3em;
-    margin-left: 10px;
+    margin-left: 5px;
     text-decoration: none;
     color: white;
 }
@@ -394,18 +394,18 @@ header p a {font-family: 'Rock Salt', cursive;
     width: 100%;
 
 }
+.footer .ico p {
+    margin-left: 10px;
+    font-size: 0.8em;}
 
 /* Contenedores Secundarios */
-.footernav div {
+.footernav div a {
     font-family: 'Rock Salt', cursive;
-    font-size:xx-small;
-    margin: 0.5px;
+    font-size:0.5em;
+    margin: 10px;
     padding: 0.5px;
 }
 
-.footernav div a {
-    text-decoration: none;
-}
 
 /* Formulario: start */
 .mainsuscripcion {
@@ -473,13 +473,21 @@ form{
     flex-direction: column; 
     font-size: 1.5em;
 }
-
+#textoContacto h2 {
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 15px;
+}
 #textoContacto p {
     font-family: 'Ysabeau', sans-serif;
     margin: 10px;
-    text-align:center;
+    text-align:left;
     font-size: larger;
-    font-weight: bolder;
+    font-weight: bold;
+    margin-bottom: 40px;
+
 }
 
 .contactos {
@@ -510,7 +518,7 @@ form{
     /* Ubicar Aside al Costado */
     .aside {
         
-        grid-column: 1/4;
+        grid-column: 1/3;
         grid-row: 2/4;
         display: flex;
         flex-direction: column;
@@ -522,7 +530,7 @@ form{
 
     /* Mover Main a la Derecha */
     .main {
-        grid-column: 4/-1;
+        grid-column: 3/-1;
         grid-row: 2/4;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -559,10 +567,21 @@ form{
     
     .aside .propaganda img {
         width:100%;
-        height: 190px;
+        height: 160px;
         margin:0 auto;
     }
-
+    .footer .ico p {
+        margin-left: 10px;
+        font-size: 1.5em;}
+    
+    /* Contenedores Secundarios */
+    .footernav div a {
+        font-family: 'Rock Salt', cursive;
+        font-size:1em;
+        margin: 10px;
+        padding: 0.5px;
+    }
+    
 
 }
 
@@ -573,11 +592,11 @@ form{
     .dropdown1 {display:none;}
     .blank { width:20em}
     .aside {
-        grid-column: 1/4;
+        grid-column: 1/3;
         grid-row: 2/4;
     }
     .main {
-        grid-column: 4/-1;
+        grid-column: 3/-1;
         grid-row: 2/4;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
