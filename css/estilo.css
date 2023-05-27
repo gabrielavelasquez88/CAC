@@ -512,7 +512,7 @@ form{
     #carrusel-caja {
         display:none;
     }
-    /* Ensanchas contenedor de logo */
+    /* Ensanchar contenedor de logo */
     .blank { width:100em}
 
     /* Ubicar Aside al Costado */
@@ -537,7 +537,7 @@ form{
         grid-template-rows: repeat (2, auto);
     }
     .mainBanda {
-        grid-column: 4/-1;
+        grid-column: 3/-1;
         grid-row: 2/4;
         display:flex;
         justify-self: center;
@@ -604,7 +604,7 @@ form{
     }
 
     .main1 {
-        grid-column: 4/-1;
+        grid-column: 3/-1;
         grid-row: 2/4;
         display:flex;
         justify-self: center;
